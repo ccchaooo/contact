@@ -1,7 +1,7 @@
 package com.example.server.controller;
 
 import com.example.server.entity.Result;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 /**
  * @author dengchao
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @org.springframework.web.bind.annotation.RestController
 public class RestController {
 
-    @GetMapping("/home")
+    @PostMapping("/home")
     public Result home(){
         Result result = new Result();
         result.setNumber(11111);
